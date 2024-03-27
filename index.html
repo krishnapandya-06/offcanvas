@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" href="assets/images/bootstrap1.png">
+  <title>Off-canvas and model </title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container justify-content-center">
+      <a class="navbar-brand" href="index.html"><img src="assets/images/samsung.png" alt="samsung"
+          style="max-width: 100%; width:100px; height: auto;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active fw-bolder mt-1" aria-current="page" href="#">Shop</a>
+          </li <li class="nav-item ">
+          <a class="nav-link fw-bolder  mt-1" href="#">Mobile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder  mt-1" href="#">TV & AV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder mt-1 " href="#">Laptop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder mt-1 " href="#">Monitor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder mt-1" href="#">SmartThings</a>
+          </li>
+        </ul>
+        <div>
+          <button class="btn btn-dark text-white" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Off Canvas
+          </button>
+          <button type="button" class="btn btn-dark text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Modal
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- off canvas -->
+  <div class="offcanvas offcanvas-start show bg-dark " data-bs-backdrop="static" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Our New Galaxy Phones</h5>
+      <button type="button" class="btn-close btn btn-info" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="text-white">
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+        etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Check-out Some New
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">samsung S23</a></li>
+          <li><a class="dropdown-item" href="#">samsung S22</a></li>
+          <li><a class="dropdown-item" href="#">samsung S21</a></li>
+          <li><a class="dropdown-item" href="#">samsung S21 ultra</a></li>
+        </ul>
+      </div>
+      <h2 class="text-white mt-3 text-decoration-underline">New S21</h2>
+      <img src="assets/images/s21.jpeg" alt="">
+      <h2 class="text-white mt-3 text-decoration-underline">New A35</h2>
+      <img src="assets/images/A34.jpeg" alt="">             
+      <h2 class="text-white mt-3 text-decoration-underline">New A15</h2>
+      <img src="assets/images/A15.jpeg" alt="" style="width: 200px; max-width: 100%; height: auto;">
+      <h2 class="text-white mt-3 text-decoration-underline">New S21 ultra</h2>
+      <img src="assets/images/s21 ultra.jpeg" alt="">
+    </div>
+  </div>
+  <!-- modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 bg-dark text-white" id="exampleModalLabel"> Some New Features</h1>
+          <button type="button" class="btn-close btn-primary " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark text-white">
+          We are glad to say that our new futeristic Mobile Z fold is launch on the June 12 th, 2024! This phone have an
+          his own ai that is include some Galaxy budget freindly.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Show The product</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
